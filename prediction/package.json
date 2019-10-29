@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/kkogan/predicting_breakups#readme",
   "devDependencies": {
-    "serverless": "^1.55.1",
-    "serverless-dotenv-plugin": "^2.1.1"
+    "serverless": "^1.55.1"
   }
 }
