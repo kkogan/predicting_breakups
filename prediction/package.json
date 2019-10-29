@@ -1,0 +1,23 @@
+{
+  "name": "breakup-prediction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkogan/predicting_breakups.git"
+  },
+  "author": "Kirill Kogan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkogan/predicting_breakups/issues"
+  },
+  "homepage": "https://github.com/kkogan/predicting_breakups#readme",
+  "devDependencies": {
+    "serverless": "^1.55.1",
+    "serverless-dotenv-plugin": "^2.1.1"
+  }
+}

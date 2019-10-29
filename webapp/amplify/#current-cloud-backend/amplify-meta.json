@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-breakup-dev-205845-authRole",
+			"UnauthRoleArn": "arn:aws:iam::620618581980:role/amplify-breakup-dev-205845-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::620618581980:role/amplify-breakup-dev-205845-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-breakup-dev-205845-deployment",
+			"UnauthRoleName": "amplify-breakup-dev-205845-unauthRole",
+			"StackName": "amplify-breakup-dev-205845",
+			"StackId": "arn:aws:cloudformation:us-east-1:620618581980:stack/amplify-breakup-dev-205845/4273d5c0-f9e7-11e9-b3a8-121fa677fe9a"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-breakup-dev-205845-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-10-29T01:22:18.253Z",
+			"output": {
+				"S3BucketSecureURL": "https://breakup-20191028212007-hostingbucket-dev.s3.amazonaws.com",
+				"WebsiteURL": "http://breakup-20191028212007-hostingbucket-dev.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "breakup-20191028212007-hostingbucket-dev"
+			},
+			"lastPushDirHash": "mfmv/Y2qglUNZ7bzRSNvXQPgeeg="
+		}
+	}
+}

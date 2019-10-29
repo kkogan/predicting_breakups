@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-breakup-dev-205845-authRole",
+            "UnauthRoleArn": "arn:aws:iam::620618581980:role/amplify-breakup-dev-205845-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::620618581980:role/amplify-breakup-dev-205845-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-breakup-dev-205845-deployment",
+            "UnauthRoleName": "amplify-breakup-dev-205845-unauthRole",
+            "StackName": "amplify-breakup-dev-205845",
+            "StackId": "arn:aws:cloudformation:us-east-1:620618581980:stack/amplify-breakup-dev-205845/4273d5c0-f9e7-11e9-b3a8-121fa677fe9a"
+        }
+    }
+}
