@@ -24,11 +24,11 @@ provider:
   name: aws
   runtime: python3.7
 
-# you can overwrite defaults here
-#  stage: dev
+  # you can overwrite defaults here
+  #  stage: dev
   region: us-east-1
 
-# you can add statements to the Lambda function's IAM Role here
+  # you can add statements to the Lambda function's IAM Role here
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -56,9 +56,10 @@ provider:
 # you can add packaging information here
 package:
   individually: true
-#  include:
-#    - include-me.py
-#    - include-me-dir/**
+  #include:
+  #  - ./predict.py
+  #   - include-me.py
+  #    - include-me-dir/**
   exclude:
     - ./**
 #    - exclude-me.py
@@ -66,7 +67,13 @@ package:
 
 functions:
   predict-breakup:
-    handler: src/predict.handler
+    handler: predict.handler
+    layers:
+      - { Ref: PythonRequirementsLambdaLayer }
+    package:
+      include:
+        - predict.py
+        - util.py
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -134,7 +141,7 @@ custom:
     slim: true
     useDownloadCache: true
     useStaticCache: true
-    dockerizePip: true
+    dockerizePip: non-linux
     layer:
       name: ${self:provider.stage}-python37
       description: Python Requirements for prediction
