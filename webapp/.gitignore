@@ -1,0 +1,2 @@
+#amplify local config
+.config/local-*.json
