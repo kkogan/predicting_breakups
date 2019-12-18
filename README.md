@@ -10,7 +10,7 @@ I processed data from a longitudinal survey of Americans in relationships perfor
 > Rosenfeld, Michael J., Reuben J. Thomas, and Maja Falcon. 2018. [How Couples Meet and Stay Together, Waves 1, 2, and 3: Public version 3.04, plus wave 4 supplement version 1.02 and wave 5 supplement version 1.0 and wave 6 supplement ver 1.0](https://data.stanford.edu/hcmst) [Computer files]. Stanford, CA: Stanford University Libraries.
 
 #### Techniques applied
-This is an exploration of binary classfication and feature engineering:
+This is an exploration of binary classfication and feature engineering, and applying some recent AWS tools to hosting the model:
  - decision trees, random forests, grid search, confusion matrices 
  - I tried out an auto-ML tool called auto-viML, with mixed results, after seeing a presentation from it's developer, (a GCP PM)
 - some exploration of getting a model deployed using AWS Amplify, AWS Lambda layers and S3 (this ended up being more complicated than I had time for, and perhaps unecessary in the long run given the contraints)
