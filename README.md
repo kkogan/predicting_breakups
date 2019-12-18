@@ -13,7 +13,7 @@ I processed data from a longitudinal survey of Americans in relationships perfor
 This is an exploration of binary classfication and feature engineering:
  - decision trees, random forests, grid search, confusion matrices 
  - I tried out an auto-ML tool called auto-viML, with mixed results, after seeing a presentation from it's developer, (a GCP PM)
-- some exploration of getting a model deployed using AWS Lambda layers and S3 (this ended up being more complicated than I had time for, and perhaps unecessary in the long run given the contraints)
+- some exploration of getting a model deployed using AWS Amplify, AWS Lambda layers and S3 (this ended up being more complicated than I had time for, and perhaps unecessary in the long run given the contraints)
 
 #### Future Work
 - A web app to allow people to input aspects of their relationship and generate a prediction.
